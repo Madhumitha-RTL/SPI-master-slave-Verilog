@@ -1,59 +1,147 @@
-# 🚀 SPI Master-Slave Verilog
+<div align="center">
 
-<p align="center">
-  <img src="spi_master_wave.png" width="800"/>
-</p>
+# 🚀 SPI Master & SPI Slave Controller
+### Verilog HDL Implementation for FPGA
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Verilog-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Tool-Quartus-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Simulation-Passed-brightgreen?style=for-the-badge">
-</p>
-
----
-
-# 📖 Project Overview
-
-This project implements SPI Master-Slave Communication using Verilog HDL.
+![Verilog](https://img.shields.io/badge/Language-Verilog-blue?style=for-the-badge)
+![FPGA](https://img.shields.io/badge/Target-FPGA-success?style=for-the-badge)
+![Quartus](https://img.shields.io/badge/Tool-Intel%20Quartus-blueviolet?style=for-the-badge)
+![ModelSim](https://img.shields.io/badge/Simulation-ModelSim-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
-# 🧩 SPI Master RTL
+## 📖 Project Overview
 
-<p align="center">
-<img src="spi_master_rtl.png" width="700"/>
-</p>
+This project presents a complete **SPI (Serial Peripheral Interface)** communication system designed using **Verilog HDL**. The design includes both **SPI Master** and **SPI Slave** modules with complete RTL implementation and simulation verification.
 
----
-
-# 📊 SPI Master Waveform
-
-<p align="center">
-<img src="spi_master_wave.png" width="700"/>
-</p>
+The Master generates the SPI clock and controls data transmission, while the Slave receives and transmits serial data through the SPI protocol.
 
 ---
 
-# 🧩 SPI Slave RTL
+## ✨ Features
 
-<p align="center">
-<img src="slave_rtl.png" width="700"/>
-</p>
+✔ SPI Master Design
+
+✔ SPI Slave Design
+
+✔ Full Duplex Communication
+
+✔ MOSI & MISO Data Transfer
+
+✔ SCLK Generation
+
+✔ Chip Select (CS)
+
+✔ RTL Simulation
+
+✔ Testbench Verification
+
+✔ FPGA Ready Design
 
 ---
 
-# 📊 SPI Slave Waveform
+# 🏗 Architecture
 
-<p align="center">
-<img src="slave_wave.png" width="700"/>
-</p>
+```
+               +----------------------+
+               |      SPI MASTER      |
+               |----------------------|
+               | MOSI ----------->    |
+               | MISO <-----------    |
+               | SCLK ----------->    |
+               | CS   ----------->    |
+               +----------|-----------+
+                          |
+                          |
+               +----------V-----------+
+               |      SPI SLAVE       |
+               |----------------------|
+               | Receives MOSI Data   |
+               | Sends MISO Data      |
+               +----------------------+
+```
 
 ---
 
-## 🛠 Tools Used
+## 📂 Repository Structure
+
+```
+SPI_Master_Slave/
+│
+├── RTL/
+│   ├── spi_master.v
+│   ├── spi_slave.v
+│
+├── Testbench/
+│   ├── spi_master_tb.v
+│   ├── spi_slave_tb.v
+│
+├── Simulation/
+│   ├── Waveform.png
+│
+├── Images/
+│   ├── Block_Diagram.png
+│   ├── RTL.png
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Tools Used
+
 - Verilog HDL
 - Intel Quartus Prime
 - ModelSim
+- FPGA Development Flow
+
+---
+
+## 📡 SPI Signals
+
+| Signal | Description |
+|---------|-------------|
+| MOSI | Master Out Slave In |
+| MISO | Master In Slave Out |
+| SCLK | Serial Clock |
+| CS | Chip Select |
+
+---
+
+## 🧪 Verification
+
+Simulation was performed using **ModelSim** to verify:
+
+- Serial Data Transmission
+- Serial Data Reception
+- Clock Synchronization
+- Chip Select Operation
+- SPI Timing
+
+---
+
+## 🚀 Applications
+
+- FPGA Designs
+- Embedded Systems
+- Sensor Interfaces
+- EEPROM Communication
+- ADC/DAC Interfaces
+- Microcontroller Communication
+
+---
 
 ## 👩‍💻 Author
+
 **Madhumitha**
+
+RTL Design | Verilog HDL | FPGA | Digital Design
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, please consider giving it a Star!
+
+</div>
