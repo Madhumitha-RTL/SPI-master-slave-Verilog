@@ -10,6 +10,21 @@ This project implements SPI (Serial Peripheral Interface) Master-Slave communica
 - RTL Schematic
 - Simulation Waveforms
 - Testbench Verification
+- ## SPI Master RTL
+
+![SPI Master RTL](spi_master_rtl.png)
+
+## SPI Master Waveform
+
+![SPI Master Waveform](spi_master_wave.png)
+
+## SPI Slave RTL
+
+![SPI Slave RTL](slave_rtl.png)
+
+## SPI Slave Waveform
+
+![SPI Slave Waveform](slave_wave.png)
 
 ## Project Files
 
