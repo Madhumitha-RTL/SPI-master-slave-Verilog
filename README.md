@@ -1,43 +1,59 @@
-# SPI Master-Slave Verilog
+# 🚀 SPI Master-Slave Verilog
 
-## Project Overview
-This project implements SPI (Serial Peripheral Interface) Master-Slave communication using Verilog HDL. It includes RTL design, simulation waveforms, and verification using a testbench.
+<p align="center">
+  <img src="spi_master_wave.png" width="800"/>
+</p>
 
-## Features
-- SPI Master Design
-- SPI Slave Design
-- Verilog HDL Implementation
-- RTL Schematic
-- Simulation Waveforms
-- Testbench Verification
-- ## SPI Master RTL
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Verilog-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tool-Quartus-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Simulation-Passed-brightgreen?style=for-the-badge">
+</p>
 
-![SPI Master RTL](spi_master_rtl.png)
+---
 
-## SPI Master Waveform
+# 📖 Project Overview
 
-![SPI Master Waveform](spi_master_wave.png)
+This project implements SPI Master-Slave Communication using Verilog HDL.
 
-## SPI Slave RTL
+---
 
-![SPI Slave RTL](slave_rtl.png)
+# 🧩 SPI Master RTL
 
-## SPI Slave Waveform
+<p align="center">
+<img src="spi_master_rtl.png" width="700"/>
+</p>
 
-![SPI Slave Waveform](slave_wave.png)
+---
 
-## Project Files
+# 📊 SPI Master Waveform
 
-- spi_master_pro.png - SPI Master Verilog Code
-- spi_master_rtl.png - SPI Master RTL Schematic
-- spi_master_wave.png - SPI Master Simulation Waveform
-- slave_pro.png - SPI Slave Verilog Code
-- slave_rtl.png - SPI Slave RTL Schematic
-- slave_wave.png - SPI Slave Simulation Waveform
+<p align="center">
+<img src="spi_master_wave.png" width="700"/>
+</p>
 
-## Tools Used
+---
+
+# 🧩 SPI Slave RTL
+
+<p align="center">
+<img src="slave_rtl.png" width="700"/>
+</p>
+
+---
+
+# 📊 SPI Slave Waveform
+
+<p align="center">
+<img src="slave_wave.png" width="700"/>
+</p>
+
+---
+
+## 🛠 Tools Used
 - Verilog HDL
-- Xilinx Vivado
+- Intel Quartus Prime
+- ModelSim
 
-## Author
+## 👩‍💻 Author
 **Madhumitha**
